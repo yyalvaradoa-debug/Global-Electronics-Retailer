@@ -8,14 +8,6 @@ A comprehensive analysis of sales performance, store performance, and customer t
 
 The purpose of this project is to estimate sales performance across the company's global store network and identify trends or patterns throughout the years 2016–2020.
 
-## Team
-
-| Member | Role |
-|---|---|
-| Yisel Alvarado Ayala | Goal 1 — Sales Performance |
-| Daniel Cedeno | Goal 2 — Store Performance |
-| Jose Alfaro | Goal 3 — Trends Over Time |
-
 ## Analysis Goals
 
 **Goal 1 — Identify and Understand Sales Performance**
@@ -50,9 +42,9 @@ Global-Electronics-Retailer/
 ├── Database File/
 │   └── GlobalElectronicsRetailer.bacpac    Backup of the Azure SQL database
 ├── SQL/
-│   ├── Goal1_Sales_Performance.sql          4 queries — Yisel
-│   ├── Goal2_Store_Performance.sql          4 queries + stored procedure — Daniel
-│   └── Goal3_Trends_Over_Time.sql           4 queries — Jose
+│   ├── Goal1_Sales_Performance.sql          
+│   ├── Goal2_Store_Performance.sql          
+│   └── Goal3_Trends_Over_Time.sql           
 ├── Visualizations/
 │   ├── Goal1_ProfitPerCategory.png
 │   ├── Goal1_SilentKillers.png
