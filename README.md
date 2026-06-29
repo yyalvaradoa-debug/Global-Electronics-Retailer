@@ -24,15 +24,14 @@ Analyze customer demographics, geographic distribution, seasonal sales patterns,
 ## Process
 
 1. Downloaded the Global Electronics Retailer dataset from [Maven Analytics](https://mavenanalytics.io/data-playground/global-electronics-retailer)
-2. Created an Azure SQL Database using the Azure for Students free tier
-3. Created all database tables in Azure SQL using the Query Editor
-4. Loaded CSV data into Azure SQL using a custom Python script (`load_data.py`) with the `pyodbc` library and ODBC Driver 17 for SQL Server
-5. Exported the completed database as a `.bacpac` file for backup and sharing
-6. Connected Azure SQL Database to VS Code using the mssql and DBCode extensions
-7. Wrote 12 T-SQL queries across three analysis goals, including joins, CTEs, window functions, subqueries, and a stored procedure with IF/ELSE logic
-8. Built visualizations using DBCode's charting feature
-9. Collaborated via GitHub with a shared repository
-
+2. Created all database tables in Azure SQL for students using the Query Editor (Limited)
+3. Imported the .bacpac database file into a local SQL Server instance using Docker Desktop with the official mcr.microsoft.com/mssql/server:2022-latest image
+4. Restored the database inside the Docker container using SqlPackage (/Action:Import)
+5. Connected the local SQL Server to VS Code using the mssql extension
+6. Exported the database schema as a schema.sql file using sqlcmd inside the Docker container
+7. Wrote T-SQL queries across three analysis goals, including joins, CTEs, window functions, subqueries, and a stored procedure with IF/ELSE logic
+8. Built visualizations using VS Code's charting features
+9. Collaborated via GitHub with a shared repository organized into folders: Database File, SQL, Visualizations, and Presentation
 ---
 
 ## Repository Structure
@@ -100,7 +99,7 @@ Global-Electronics-Retailer/
 
 - Dataset: [Maven Analytics — Global Electronics Retailer](https://mavenanalytics.io/data-playground/global-electronics-retailer)
 - Azure SQL Database documentation
-- DBCode extension for Visual Studio Code
-- Google Gemini — assistance with documentation 
-- Claude AI - assistance with customizing Python script with the `pyodbc` library to upload CSVs
+- Docker Desktop — local SQL Server environment
+- SQL Server (mssql) extension for Visual Studio Code
+- Claude AI — assistance with customizing python script, Visual Code setup to Docker
 - Gamma — AI-powered presentation tool used for slide deck creation
