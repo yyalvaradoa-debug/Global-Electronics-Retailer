@@ -89,7 +89,7 @@ Global-Electronics-Retailer/
 
 - **Azure SQL Database** — cloud-hosted relational database
 - **Python (pyodbc)** — CSV data loading into Azure SQL Database
-- **VS Code + mssql + DBCode extension** — query development and visualization
+- **VS Code + mssql** — query development and visualization
 - **T-SQL** — all analysis queries, including CTEs, window functions, and stored procedures
 - **GitHub** — version control and team collaboration
 
